@@ -6,6 +6,8 @@ import umg.pgm2.group1.clsVolumeCube;
 import umg.pgm2.group2.clsAreaPyramid;
 import umg.pgm2.group2.clsAreaTriangle;
 import umg.pgm2.group2.clsVolumePyramid;
+import umg.pgm2.group3.clsAreaParallelogram;
+import umg.pgm2.group3.clsVolumeCylinder;
 import umg.pgm2.group3.clsVolumePrism;
 
 public class Main {
@@ -17,6 +19,8 @@ public class Main {
         clsVolumeCube volumeCube = new clsVolumeCube();
         clsVolumePyramid volumePyramid = new clsVolumePyramid();
         clsAreaTriangle areaTriangle = new clsAreaTriangle();
+        clsAreaParallelogram areaParallelogram = new clsAreaParallelogram();
+        clsVolumeCylinder volumeCylinder = new clsVolumeCylinder();
 
         System.out.println("areaPyramid");
         System.out.println(areaPyramid.calculateAreaPyramid(4,5,6,5));
@@ -38,5 +42,11 @@ public class Main {
 
         System.out.println("areaTriangle");
         System.out.println(areaTriangle.calculateAreaTriangle(8,12));
+
+        System.out.println("areaParallelogram");
+        System.out.println(areaParallelogram.calculateAreaParallelogram(2,9));
+
+        System.out.println("volumeCylinder");
+        System.out.println(volumeCylinder.calculateVolumeCylinder(6,15));
     }
 }
